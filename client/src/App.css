@@ -1,9 +1,12 @@
+/* font-family: 'Martel Sans', sans-serif; */
+
 .navLink {
   text-decoration: none;
   color: white;
   display: inline-block;
   margin-left: 16px;
-  font-size: 12px;
+  font-size: 13px;
+  font-family: 'Martel Sans', sans-serif;
 }
 
 .first {
@@ -17,4 +20,13 @@
   margin: auto;
   font-size: 22px;
   text-decoration: none;
+  font-family: 'Martel Sans', sans-serif;
+}
+
+.hoverItem {
+  margin-left: 18px;
+}
+
+.hoverItem:hover {
+  cursor: pointer;
 }
