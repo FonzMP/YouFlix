@@ -1,10 +1,25 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+
+const NavContainer = styled.a`
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 12px;
+  &.first {
+    margin-left: 0;
+    padding-left: 22px;
+  }
+`
+
+
 
 class NavLink extends Component {
   render() {
-    console.log('props ', this.props.nav)
     return (
-      <span>{this.props.nav.href !== "" ? <a href="{this.props.nav.href}">{this.props.nav.display}</a> : <span>{this.props.nav.display}</span>}</span>
+      <Link to={this.props.nav.href} className={this.props.nav.display === "Home" ? 'first navLink' : 'navLink'}>{this.props.nav.display}</Link>
     )
   }
 }

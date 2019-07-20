@@ -1,18 +1,22 @@
+import { ApplicationConstants } from '../../_constants/application.constants'
+
+const c = ApplicationConstants
+
 export const DataModel = {
   navigationLinks: [
     {
       display: 'Home',
-      href: "/",
+      href: `${c.HOME}`,
       target: ""
     },
     {
       display: 'Recently Added',
-      href: "",
+      href: `${c.RECENT}`,
       target: ""
     },
     {
       display: 'My Favorites',
-      href: "/favorites",
+      href: `${c.FAVORITES}`,
       target: ""
     },
   ]

@@ -1,0 +1,20 @@
+.navLink {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 12px;
+}
+
+.first {
+  margin-left: 0;
+  padding-left: 22px;
+}
+
+.title {
+  display: inline-block;
+  color: rgba(229, 9, 20, 1);
+  margin: auto;
+  font-size: 22px;
+  text-decoration: none;
+}
