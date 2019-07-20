@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import NavLink from './navLink'
 import { ApplicationConstants } from '../../_constants/application.constants'
 import { DataModel } from '../../assets/data/DataModel'
@@ -15,6 +17,8 @@ const Wrapper = style.div`
   display: block;
   padding: 6px 0;
   height: 42px;
+  position: relative;
+  z-index: 1;
 `
 const ContentWrapper = style.div`
   width: 90%;
@@ -28,10 +32,18 @@ const NavReplacement = style.div`
   align-items: center;
 `
 
+const UserItems = style.div`
+  float: right;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 22px;
+`
+
 class NavBar extends Component {
   renderNavLinks = () => {
     return navLinks.map(navItem => {
-      return <NavLink nav={navItem} key={navItem} />
+      return <NavLink nav={navItem} key={navItem.display} />
     })
   }
   render() {
@@ -44,6 +56,10 @@ class NavBar extends Component {
           <NavReplacement>
             <span>{this.renderNavLinks()}</span>
           </NavReplacement>
+          <UserItems>
+            <FontAwesomeIcon icon="bell" className="hoverItem"></FontAwesomeIcon>
+            <FontAwesomeIcon icon="user" className="hoverItem"></FontAwesomeIcon>
+          </UserItems>
         </ContentWrapper>
       </Wrapper>
     )

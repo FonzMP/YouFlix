@@ -1,9 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBell, faUser } from '@fortawesome/free-solid-svg-icons'
 
 import NavBar from './shared/navigation/navbar'
 import { ApplicationConstants } from './_constants/application.constants'
 import './App.css';
+
+library.add(faBell, faUser)
 
 const constants = ApplicationConstants;
 function App() {
