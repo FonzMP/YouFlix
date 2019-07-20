@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBell, faUser } from '@fortawesome/free-solid-svg-icons'
+
+import NavBar from './shared/navigation/navbar'
+import { ApplicationConstants } from './_constants/application.constants'
 import './App.css';
 
+library.add(faBell, faUser)
+
+const constants = ApplicationConstants;
 function App() {
-  console.log('process ', process.env.REACT_APP_YOUTUBE_KEY)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <div>
+        <React.Fragment>
+          <Switch>
+            {/* <Route exact path={constants.HOME} component={Home}></Route>
+            <Route exact path={constants.FAVORITES} component={Home}></Route>
+            <Route exact path="/" component={Home}></Route> */}
+          </Switch>
+        </React.Fragment>
+      </div>
+    </Router>
   );
 }
 
