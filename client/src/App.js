@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log('alex here')
+  console.log('process ', process.env.REACT_APP_YOUTUBE_KEY)
   return (
     <div className="App">
       <header className="App-header">
