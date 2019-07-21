@@ -3,6 +3,7 @@ import VideoGrid from "../components/video/VideoGrid";
 import PlaceHolder from "../components/images/placeholder";
 import { ApplicationConstants } from "../_constants/application.constants";
 import { VideoServices } from "../services/video.services";
+import { VideoGridStyled } from "../components/video/VideoGrid"
 
 const c = ApplicationConstants;
 export default class Home extends React.Component {
@@ -42,7 +43,7 @@ export default class Home extends React.Component {
         {this.state.loading ? (
           <div>loading.....</div>
         ) : (
-          <span>{this.state.videos ? this.renderPlaceholders() : null}</span>
+          <VideoGridStyled>{this.state.videos ? this.renderPlaceholders() : null}</VideoGridStyled>
         )}
       </div>
     );
