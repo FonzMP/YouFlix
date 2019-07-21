@@ -8,7 +8,7 @@ export const VideoGridStyled = styled.div`
   grid-gap: 8%;
   width: 90%;
   &:first-child{
-    margin-top: 10em;
+    margin-top: 8em;
   }
 `;
 

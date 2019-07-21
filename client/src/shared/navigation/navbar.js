@@ -15,7 +15,7 @@ const Wrapper = style.div`
   z-index: 1;
   width: 100%;
   top: 0;
-  background: black;
+  background: #141414;
   display: block;
   padding: 6px 0;
   height: 42px;
