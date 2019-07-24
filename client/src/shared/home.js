@@ -33,21 +33,19 @@ export default class Home extends React.Component {
 
   renderPlaceholders = () => {
     return this.state.videos.items.map(video => {
-      return <PlaceHolder video={video} />;
+      return <PlaceHolder video={video} key={video.id} />;
     });
   };
 
   render() {
     return (
-      <div>
+      <span>
         {this.state.loading ? (
           <div>loading.....</div>
         ) : (
-          <VideoGridStyled>
-            {this.state.videos ? this.renderPlaceholders() : null}
-          </VideoGridStyled>
+          <span>{this.state.videos ? this.renderPlaceholders() : null}</span>
         )}
-      </div>
+      </span>
     );
   }
 }
