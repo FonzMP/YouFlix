@@ -1,8 +1,9 @@
 /* font-family: 'Martel Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
 
 * {
-  background: #141414;
+  margin: 0;
+  padding: 0;
 }
 
 .navLink {
@@ -24,11 +25,11 @@
   color: rgba(229, 9, 20, 1);
   margin: auto;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 5vmin;
   font-weight: 700;
-  border-bottom-left-radius:-50%;
-  border-bottom-right-radius:-50%;
+  border-bottom-left-radius: -50%;
+  border-bottom-right-radius: -50%;
 }
 
 .hoverItem {
@@ -41,5 +42,9 @@
 
 .contentBody {
   width: 90%;
-  margin: 0 auto;
+  margin: 89px auto 0;
+}
+
+.appWrapper {
+  background: black;
 }
