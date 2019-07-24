@@ -16,10 +16,9 @@ const Wrapper = style.div`
   width: 100%;
   top: 0;
   background: #141414;
-  display: block;
   padding: 6px 0;
-  height: 42px;
-  z-index: 1;
+  display: inline-block;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.8)
 `;
 const ContentWrapper = style.div`
   width: 90%;
@@ -37,8 +36,13 @@ const UserItems = style.div`
   float: right;
   color: white;
   position: absolute;
-  top: 20px;
-  right: 22px;
+  top: 36px;
+  right: 32px;
+  margin-right: 12px;
+`;
+
+const UserWrap = style.span`
+  margin-left: 12px;
 `;
 
 class NavBar extends Component {
@@ -58,8 +62,12 @@ class NavBar extends Component {
             <span>{this.renderNavLinks()}</span>
           </NavReplacement>
           <UserItems>
-            <FontAwesomeIcon icon="bell" className="hoverItem" />
-            <FontAwesomeIcon icon="user" className="hoverItem" />
+            <UserWrap>
+              <FontAwesomeIcon icon="bell" className="hoverItem" />
+            </UserWrap>
+            <UserWrap>
+              <FontAwesomeIcon icon="user" className="hoverItem" />
+            </UserWrap>
           </UserItems>
         </ContentWrapper>
       </Wrapper>
