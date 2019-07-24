@@ -11,9 +11,11 @@ const navLinks = DataModel.navigationLinks;
 const constants = ApplicationConstants;
 
 const Wrapper = style.div`
-  position: relative;
+  position: fixed;
   z-index: 1;
-  background: black;
+  width: 100%;
+  top: 0;
+  background: #141414;
   display: block;
   padding: 6px 0;
   height: 42px;
