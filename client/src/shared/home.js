@@ -1,11 +1,9 @@
 import React from "react";
-import VideoGrid from "../components/video/VideoGrid";
+// import VideoGrid from "../components/video/VideoGrid";
 import PlaceHolder from "../components/images/placeholder";
-import { ApplicationConstants } from "../_constants/application.constants";
 import { VideoServices } from "../services/video.services";
-import { VideoGridStyled } from "../components/video/VideoGrid"
+import { VideoGridStyled } from "../components/video/VideoGrid";
 
-const c = ApplicationConstants;
 export default class Home extends React.Component {
   constructor() {
     super();
@@ -43,7 +41,9 @@ export default class Home extends React.Component {
         {this.state.loading ? (
           <div>loading.....</div>
         ) : (
-          <VideoGridStyled>{this.state.videos ? this.renderPlaceholders() : null}</VideoGridStyled>
+          <VideoGridStyled>
+            {this.state.videos ? this.renderPlaceholders() : null}
+          </VideoGridStyled>
         )}
       </div>
     );
