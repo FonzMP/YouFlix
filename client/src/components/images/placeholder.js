@@ -5,6 +5,10 @@ const Images = style.img`
     display: inline-block;
     width: auto;
     margin: 12px 2px;
+    transition: transform 0.3s;
+    &:hover{
+      transform: scale(1.15);
+    }
 `;
 
 
