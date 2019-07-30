@@ -11,16 +11,11 @@ const Images = style.img`
     }
 `;
 
-
-
 class PlaceHolder extends Component {
-  constructor() {
-    super();
-  }
   render() {
     return (
       <span>
-        <Images src={this.props.video.snippet.thumbnails.medium.url}/>
+        <Images src={this.props.video.snippet.thumbnails.medium.url} />
       </span>
     );
   }
