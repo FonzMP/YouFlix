@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 export const VideoGridStyled = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  grid-gap: 8%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1%;
   width: 90%;
   &:first-child{
     margin-top: 8em;
