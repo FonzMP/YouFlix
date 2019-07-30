@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import Home from "./shared/home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";

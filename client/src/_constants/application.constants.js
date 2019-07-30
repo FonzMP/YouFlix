@@ -4,5 +4,5 @@ export const ApplicationConstants = {
   RECENT: "/recent",
   FAVORITES: "/favorites",
   YOUTUBE_API:
-    "https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&regionCode=US&maxResults=25&key="
+    "https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&regionCode=US&maxResults=24&key="
 };

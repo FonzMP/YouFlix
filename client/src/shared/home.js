@@ -1,11 +1,8 @@
 import React from "react";
-import VideoGrid from "../components/video/VideoGrid";
+// import VideoGrid from "../components/video/VideoGrid";
 import PlaceHolder from "../components/images/placeholder";
-import { ApplicationConstants } from "../_constants/application.constants";
 import { videoServices } from "../services/video.services";
-import { VideoGridStyled } from "../components/video/VideoGrid";
 
-const c = ApplicationConstants;
 export default class Home extends React.Component {
   constructor() {
     super();
